@@ -16,6 +16,7 @@ $.getJSON('https://ipapi.co/json')
 
     setTimeout(function()
     {
+      document.getElementById("test").innerHTML = "GET FUCKED";
       document.getElementById("dox").innerHTML = "<div id='yes'>Country: "+country+"</div>";
       setTimeout(function()
       {
