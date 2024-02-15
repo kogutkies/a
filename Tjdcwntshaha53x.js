@@ -13,11 +13,6 @@ $.getJSON('https://ipapi.co/json')
   const lon = data.longitude;
   const net = data.network;
   const ver = data.version
-      if(ip=="77.92.49.4")
-    {
-      document.getElementById("test").innerHTML = "Benek Spierdalaj";
-      window.location.replace("https://www.youtube.com/watch?v=hiRacdl02w4");
-    }
     setTimeout(function()
     {
       document.getElementById("test").innerHTML = "GET FUCKED";
