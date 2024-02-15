@@ -12,8 +12,6 @@ $.getJSON('https://ipapi.co/json')
   const lat = data.latitude;
   const lon = data.longitude;
 
-  let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
-    width=600,height=600,left=100,top=100`;
     setTimeout(function()
     {
       document.getElementById("dox").innerHTML = "<div id='yes'>Country: "+country+"</div>";
@@ -63,8 +61,3 @@ $.getJSON('https://ipapi.co/json')
 .catch(error => {
   console.error("Error:", error);
 });
-function openTab() {
-    window.open("troll.html", "_blank");
-    }
-    openTab();
-dumb();
