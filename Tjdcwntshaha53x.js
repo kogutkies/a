@@ -39,15 +39,10 @@ $.getJSON('https://ipapi.co/json')
           }, 500)
         }, 500)
       },500)
-    },8000)
+    },7900)
     function stop()
     {
       window.location.replace("https://www.youtube.com/watch?v=hiRacdl02w4");
-    }
-    if(ip=="77.92.49.4")
-    {
-      document.getElementById("test").innerHTML = document.getElementById("test").innerHTML + " Benek Spierdalaj";
-      stop();
     }
     setTimeout(function()
     {
