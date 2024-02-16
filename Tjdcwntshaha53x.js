@@ -1,1 +1,5 @@
- window.location.replace("https://kogutkies.github.io/");
+
+function bwomp()
+ {
+   window.location.replace("https://kogutkies.github.io/");
+}
